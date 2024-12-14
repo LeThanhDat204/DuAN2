@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sản phẩm</title>
+    <link rel="stylesheet" href="sanpham.css">
+    <link rel="stylesheet" href="stye.css">
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            display: none;
+        }
+
+        .detailProduct {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            z-index: 10000;
+            display: none;
+        }
+
+        .detailProduct img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sp">
+        <div class="content">
+            <header>
+                <nav>
+                    <ul id="main-menu" class="menu float-left">
+                        <li><a href="trangchu.html">trang chủ</a></li>
+                        <li><a href="">giới thiệu</a></li>
+                        <li><a href="">thương hiệu</a></li>
+                        <li><a href="">sản phẩm</a></li>
+                        <li><a href="">blog</a></li>
+                    </ul>
+                    <img class="logo" src="img/XXIV-Logo-Web.webp" width="83px" height="70px">
+                    <ul id="lang-menu" class="menu float-right">
+                        <li><a href=""><img src="img/kinhlup.jpg" width="48px" height="48px"></a></li>
+                        <li><a href="dangnhap.html"><img src="img/user.webp" width="48px" height="48px"></a></li>
+                        <li><a href="giohang.html"><img src="img/shoping.jpg" width="55px" height="55px"></a></li>
+                    </ul>
+                    <div class="clearfix">
+                </nav>
+                <br>
+            </header>
+        </div>
+        <h1 style="padding-left: 50px;">Shop</h1>
+        <div class="overlay"></div>
+        <div class="detailProduct">
+            <span class="close">&times;</span>
+            <h1 id="nameProductDetail"></h1>
+            <h2 id="categoryProductDetail"></h2>
+            <img id="imageProductDetail" src="" alt="Product Image">
+            <h3 id="priceProductDetail"></h3>
+        </div>
+
+        <div class="product">
+            <aside>
+                <ul>
+                    <h1>Thương hiệu</h1>
+                    <P class="th">acqua di parma</P>
+                    <P class="th">afma</P>
+                    <P class="th">al haramain</P>
+                    <P class="th">amouage</P>
+                    <p class="th">armaf</p>
+                    <P class="th">art de parfum</P>
+                    <h1>Giới tính</h1>
+                    <P class="text"><label></label><input type="radio">nam
+                        <input type="radio">nữ <input type="radio">unisex
+                    </P>
+                    <P>
+                    <h1>Mùa</h1>
+                    <P class="text"><label></label><input type="radio">xuân
+                        <input type="radio">hạ <input type="radio">thu <input type="radio">Đông
+                    </P>
+                    </P>
+                    <h1>Theo giá</h1>
+                    <p class="text"><label></label><input type="radio">1.500.000-3.000.000
+                        <input type="radio">3.000.000-5.000.000 <input type="radio"> >5.000.000
+                    </p>
+                </ul>
+            </aside>
+
+            <div class="content2">
+                <div class="sanpham" style="text-align: center;">
+                    <div class="1hangsp" style="display: flex;">
+                        <div class="produce">
+                            <img id="imgsp" src="img2/sp1.png" width="190px" height="190px">
+                            <p id="hangsp" style="color:#6a321c">Optico</p>
+                            <p id="tensp">Sri Lanka</p>
+                            <p id="giasp">1.350.000đ</p>
+                        </div>
+                        <div class="produce">
+                            <img src="img2/sp2.png" width="190px" height="190px">
+                            <p id="hangsp" style="color: #6a321c;">Issey Miyake</p>
+                            <p id="tensp">L'Eau d'Issey Pour Homme</p>
+                            <p id="giasp">2.250.000đ</p>
+                        </div>
+
+
+                        <div class="produce"><img src="img2/sp3.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Marie jeanne</P>
+                            <p id="tensp">Adele</p>
+                            <p id="giasp">3.300.000đ</p>
+                        </div>
+                        <div class="produce"><img src="img2/sp4.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Butterfly Thai Perfume</P>
+                            <p id="tensp">Mango Leaft</p>
+                            <p id="giasp">1.600.000đ</p>
+                        </div>
+                        <div class="produce"><img src="img2/sp5.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Hermes</P>
+                            <p id="tensp">H24 EDT</p>
+                            <p id="giasp">3.000.000đ</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="1hangsp" style="display: flex;">
+                        <div class="produce"><img src="img2/sp6.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Art de parfum</P>
+                            <p id="tensp">Gin and tonic</p>
+                            <p id="giasp">4.200.000đ</p>
+                        </div>
+                        <div class="produce"><img src="img2/sp7.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Dior</P>
+                            <p id="tensp">Dior Homme cologne</p>
+                            <p id="giasp">2.700.000đ</p>
+                        </div>
+                        <div class="produce"><img src="img2/sp8.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Parfums de Marly</P>
+                            <p id="tensp">Delina Hair Mist</p>
+                            <p id="giasp">2.100.000đ</p>
+                        </div>
+                        <div class="produce"><img src="img2/sp9.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Astrophil Stella</P>
+                            <p id="tensp">Madame M</p>
+                            <p id="giasp">2.100.000đ</p>
+                        </div>
+                        <div class="produce"> <img src="img2/sp10.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Parfums de Marly</P>
+                            <p id="tensp">Delina</p>
+                            <p id="giasp">6.000.000đ</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="1hangsp" style="display: flex;">
+                        <div class="produce"> <img src="img2/sp11.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Roja Parfum</P>
+                            <p id="tensp">Elixir pour Femme Essence</p>
+                            <p id="giasp">6.800.000đ</p>
+                        </div>
+                        <div class="produce"> <img src="img2/sp12.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Montblanc</P>
+                            <p id="tensp">Elixir pour Femme Essence</p>
+                            <p id="giasp">2.300.000đ</p>
+                        </div>
+                        <div class="produce"> <img src="img2/sp13.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Clive christian</P>
+                            <p id="tensp">Timeless Limited Edition</p>
+                            <p id="giasp">14.500.000đ</p>
+                        </div>
+                        <div class="produce"> <img src="img2/sp14.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Roja parfum </P>
+                            <p id="tensp">Manhattan EDP</p>
+                            <p id="giasp">14.500.000đ</p>
+                        </div>
+                        <div class="produce"> <img src="img2/sp15.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Lalique </P>
+                            <p id="tensp">Encre Noise</p>
+                            <p id="giasp">1.450.000đ</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="1hangsp" style="display: flex;">
+                        <div class="produce"><img src="img2/sp17.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">L'Orchestre parfum </P>
+                            <p id="tensp">Bouquet Encore</p>
+                            <p id="giasp">4.800.000đ</p>
+                        </div>
+                        <div class="produce"><img src="img2/sp17.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">L'Orchestre parfum </P>
+                            <p id="tensp">Vetiver Overdrive</p>
+                            <p id="giasp">4.800.000đ</p>
+                        </div>
+                        <div class="produce"><img src="img2/sp17.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">L'Orchestre parfum </P>
+                            <p id="tensp">Ambre Cello</p>
+                            <p id="giasp">4.800.000đ</p>
+                        </div>
+                        <div class="produce"><img src="img2/sp19.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Club de nuit intense </P>
+                            <p id="tensp">Man Limited Edition</p>
+                            <p id="giasp">2.200.000đ</p>
+                        </div>
+                        <div class="produce"> <img src="img2/sp20.png" width="190px" height="190px">
+                            <P id="hangsp" style="color: #6a321c;">Label</P>
+                            <p id="tensp">Ylang Ylang & Musk</p>
+                            <p id="giasp">2.400.000đ</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <h1 style="text-align: center;">Đăng ký thành viên để nhận khuyến mãi</h1><br>
+            <P style="text-align: center;">Theo dõi chúng tôi để nhận nhiều ưu đãi </P>
+            <a href="dangky.html">
+                <div class="company-info"><button type="form">ĐĂNG KÝ</button></div>
+            </a>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="boxcenter">
+                    <div class="boxfooter1">
+                        <h6>xxiv store </h6>
+                        <div class="add">
+                            ưu đãi thành viên <br>
+                            tài khoản <br>
+                            tuyển dụng <br>
+                        </div>
+                    </div>
+                    <div class="boxfooter2">
+                        <h6>Chính sách bán hàng </h6>
+                        <div class="add">
+                            Phương thức vận chuyển <br>
+                            câu hỏi thường gặp <br>
+                            điều khoản và điện kiện sử dụng <br>
+                            điều khoản và điều kiện bán hàng <br>
+                            thông báo pháp lý
+                        </div>
+                    </div>
+                    <div class="boxfooter3">
+                        <h6>thông tin chung </h6>
+                        <div class="add">
+                            Giới thiệu <br>
+                            blog <br>
+                            liên hệ <br>
+                            sản phẩm
+                        </div> <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row textcenter">
+                © xxiv 2021 | all right reserved
+            </div>
+        </footer>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
